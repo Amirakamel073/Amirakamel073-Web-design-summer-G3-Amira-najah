@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+
+<body>
+
+    <form method="post" autocomplete="off">
+
+        <fieldset>
+            <legend>Employee Details</legend>
+
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required pattern="[A-Za-z]+"
+                    title="Letters only" placeholder="Enter your first name">
+            </div>
+
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" minlength="5"
+                    placeholder="At least 5 characters">
+            </div>
+
+            <div>
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <div>
+                <label for="employeeId">Employee ID</label>
+                <input type="text" id="employeeId" name="employeeId">
+            </div>
+
+            <div>
+                <label for="designation">Designation</label>
+                <input type="text" id="designation" name="designation">
+            </div>
+
+            <div>
+                <label for="mobile">Mobile</label>
+                <input type="text" id="mobile" name="mobile" maxlength="11"
+                    pattern="(010|011|012|015)[0-9]{8}"
+                    title="11 digits, numbers only, starts with 010, 011, 012 or 015">
+            </div>
+
+            <div>
+                <label for="courses">Courses</label>
+                <input type="text" id="courses" name="courses" list="coursesList" placeholder="Search a course">
+                <datalist id="coursesList">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JavaScript">
+                    <option value="React">
+                    <option value="Node.js">
+                </datalist>
+            </div>
+
+            <div>
+                <label for="employeeImage">Upload Image</label>
+                <input type="file" id="employeeImage" name="employeeImage" accept=".png">
+            </div>
+
+            <div>
+                <label for="comment">Comment</label>
+                <textarea id="comment" name="comment" rows="6" cols="50" required
+                    placeholder="Enter your comment"></textarea>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label>Tracks</label>
+                <input type="checkbox" id="frontend" name="track" value="frontend" checked>
+                <label for="frontend">Frontend</label>
+                <input type="checkbox" id="backend" name="track" value="backend">
+                <label for="backend">Backend</label>
+                <input type="checkbox" id="network" name="track" value="network">
+                <label for="network">Network</label>
+            </div>
+
+            <div>
+                <label for="range">Range</label>
+                <input type="range" id="range" name="range" min="10" max="100" value="10">
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear Data">
+            </div>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
