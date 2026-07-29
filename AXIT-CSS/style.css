@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    padding: 20px 60px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-accent {
+    color: #f5822f;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links li a {
+    color: #d9d9d9;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links li a:hover {
+    color: white;
+}
+
+.hero {
+    position: relative;
+    min-height: 640px;
+    background-image: linear-gradient(rgba(10, 20, 30, 0.35), rgba(10, 20, 30, 0.35)),
+        url("https://images.pexels.com/photos/962322/pexels-photo-962322.jpeg?auto=compress&cs=tinysrgb&w=1920");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 520px;
+    color: white;
+}
+
+.hero-logo {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 {
+    font-size: 34px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    color: #d9d9d9;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn-download {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 14px 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    background: white;
+    color: #111;
+}
+
+.form-card {
+    background-color: white;
+    width: 340px;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.form-header {
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+.highlight {
+    color: #f5822f;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.form-card input {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 14px 0;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+.btn-submit {
+    margin-top: 20px;
+    margin-left: -25px;
+    margin-right: -25px;
+    background-color: #f5822f;
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #e0701f;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 25px;
+    }
+
+    .hero-content {
+        margin-bottom: 40px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+}
