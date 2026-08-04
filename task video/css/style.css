@@ -1,0 +1,168 @@
+
+* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+    background:#f8f8f8;
+}
+
+/* Container */
+.container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:60px;
+    flex-wrap:wrap;
+}
+
+* {
+  transition: all 0.3s ease-out;
+}
+
+
+h3 {
+  color: #262626;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+
+  &.small {
+    font-size: 14px;
+  }
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #00838d;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+
+/* =======================
+      CARD 1
+======================= */
+
+.custom-card1{
+    width:300px;
+    padding:20px;
+    background:#f5f5f5;
+    border-radius:10px;
+    position:relative;
+    overflow:hidden;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.custom-card1 h2{
+    margin-bottom:10px;
+}
+
+.custom-card1 p{
+    color:#666;
+    line-height:1.6;
+}
+
+.corner1{
+    position:absolute;
+    top:0;
+    right:0;
+    width:55px;
+    height:55px;
+    background:teal;
+    border-bottom-left-radius:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:20px;
+    transition:.4s;
+}
+
+.custom-card1:hover{
+    background:teal;
+    color:white;
+    transform:scale(1.05);
+}
+
+.custom-card1:hover p{
+    color:white;
+}
+
+/* card4 */
+.card4 {
+  display: block;
+  top: 0px;
+  position: relative;
+  max-width: 262px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 0;;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  
+  .go-corner {
+    background-color: #00838d;
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background-image: linear-gradient(-45deg, #8F479A 1%, #DC2A74 100%);
+  }
+  
+  .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+  }
+
+  &:hover {
+    border: 1px solid #CD3D73;
+  }
+  
+  h3 {margin-top: 8px;}
+}
+
+.card4:hover {
+  .go-corner {
+    margin-right: -12px;
+  }
+  .go-arrow {
+    opacity: 1;
+  }
+}
